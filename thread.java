@@ -3,14 +3,14 @@ class sync extends Thread {
   
   public synchronized void func1()
   {
-    for(int i=1;i<=50;i++)
+    for(int i=1;i<=500;i++)
     {
       System.out.println(i);
     }
   }
   public synchronized void func2()
   {
-    for(int i=501;i<=700;i++)
+    for(int i=501;i<1000;i++)
     {
       System.out.println(i);
     }
